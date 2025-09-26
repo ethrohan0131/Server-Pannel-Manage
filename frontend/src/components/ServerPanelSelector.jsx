@@ -61,6 +61,7 @@ const ServerPanelSelector = () => {
     };
     setPanels(updatedPanels);
     localStorage.setItem('serverPanels', JSON.stringify(updatedPanels));
+    console.log('Panel added:', newPanel.id, 'Total panels:', Object.keys(updatedPanels).length);
   };
 
   const handleDeletePanel = (panelId) => {
